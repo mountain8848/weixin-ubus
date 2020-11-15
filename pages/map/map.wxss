@@ -3,6 +3,9 @@
   padding: 0 30rpx;
 }
 
+.btn-area{
+  margin-top: 30rpx;
+}
 .page-body-button {
   margin-bottom: 30rpx;
 }
