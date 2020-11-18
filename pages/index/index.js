@@ -55,8 +55,19 @@ Page({
   clickMe: function() {
     wx.navigateTo({
       url: '../map/map'
-    })
-  }
+    }) 
+  },
 
+  // let plugin = requirePlugin('routePlan'),
+  // let key = 'LSNBZ-42XKU-UV3VF-2FQB3-SEPZ6-YDBOV'  //使用在腾讯位置服务申请的key
+  // let referer = 'U班车' //调用插件的app的名称
+  // let endPoint = JSON.stringify({  //终点
+  //     'name': '吉野家(北京西站北口店)',
+  //     'latitude': 39.89631551,
+  //     'longitude': 116.323459711
+  // }),
+  // wx.navigateTo({
+  //     url: 'plugin://routePlan/index?key=' + key + '&referer=' + referer + '&endPoint=' + endPoint
+  // })
 
 })

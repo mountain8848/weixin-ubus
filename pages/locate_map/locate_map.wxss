@@ -2,11 +2,7 @@
   box-sizing: border-box;
   padding: 0 30rpx;
 }
-.home-txt{
-  justify-content: center;
-  align-items: center;
-  text-align: center; 
-}
+
 .btn-area{
   margin-top: 30rpx;
 }
