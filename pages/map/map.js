@@ -87,6 +87,34 @@ Page({
              '&startPoint=' + startPoint + '&endPoint=' + endPoint +
              '&navigation' + navigation
     });
+  },
+
+  goHome: function(){
+    let plugin = requirePlugin('routePlan');
+    const key = 'LSNBZ-42XKU-UV3VF-2FQB3-SEPZ6-YDBOV'; //使用在腾讯位置服务申请的key
+    const referer = 'U班车'; //调用插件的app的名称
+    const navigation = 1;
+
+    let endPoint = JSON.stringify({  //起点
+      'name': '家',   
+      'latitude': homeLocation.latitude,
+      'longitude': homeLocation.longitude             
+  });
+    let startPoint = JSON.stringify({  //终点
+        'name': campany_name,   
+        'latitude': campany_latitude,
+        'longitude': campany_longitude             
+    });
+    wx.navigateTo({
+        url: 'plugin://routePlan/index?key=' + key + '&referer=' + referer + 
+             '&startPoint=' + startPoint + '&endPoint=' + endPoint +
+             '&navigation' + navigation
+    });
+  },
+  checkWeather: function(){
+    wx.navigateTo({
+      url: '../weather/weather'
+    })    
   }
   // getCenterLocation: function () {
   //   this.mapCtx.getCenterLocation({

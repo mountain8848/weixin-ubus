@@ -19,6 +19,7 @@
 
     <button bindtap="gotoCompany" class="page-body-button" type="primary">去公司</button>
     <button bindtap="goHome" class="page-body-button" type="primary">回家</button>
+    <button bindtap="checkWeather" class="page-body-button" type="primary">天气</button>
     <button bindtap="uploadAddr" class="page-body-button" type="primary">批量上传地址</button>
   </view>
 </view>
